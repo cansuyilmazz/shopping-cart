@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h2 id="checkout-title" class="text-center">Shopping Cart</h2>
+    <main>
+      <div
+        class="product-and-cart bg-body-secondary rounded-3 container-fluid w-25"
+      >
+        <div class="products col pe-5">
+          <div class="product row-cols-2 row mb-3 mt-5 pt-3">
+            <img
+              src="./img/pipe.jpeg"
+              alt="pipe"
+              class="w-50 col-1 rounded-5"
+            />
+            <div class="product-info col-3 w-50 h-25">
+              <h4 class="product-name text-dark">Pipe</h4>
+              <div class="product-price">
+                <p>
+                  <strong class="text-danger"
+                    >$<span class="product-price-strong">75.98 </span></strong
+                  >
+                  <span class="text-decoration-line-through">$99.99</span>
+                </p>
+              </div>
+              <div
+                class="quantity-controller container-fluid border border-dark rounded row justify-content-between w-100"
+              >
+                <i
+                  class="fa-solid fa-minus border border-dark rounded col-1 h-25 mt-2 pe-4 btn"
+                ></i>
+                <p class="quantity col-3 mt-2 text-center">1</p>
+                <i
+                  id="arti"
+                  class="fa-solid fa-plus border border-dark rounded col-1 h-25 mt-2 pe-4 btn"
+                ></i>
+              </div>
+              <i class="fa-regular fa-trash-can fa-2x remove-btn btn text-secondary mt-2 row"></i>
+
+              <div class="product-total">
+                Product Total: $<span class="product-total-price">75.98</span>
+              </div>
+            </div>
+          </div>
+          <div class="product row-cols-2 row mb-3">
+            <img
+              src="./img/duckToy.jpeg"
+              alt="duck toy"
+              class="w-50 col-2 rounded-5"
+            />
+            <div class="product-info col-2 w-50 h-25 mt-2">
+              <h4 class="product-name text-dark">Duck Toy</h4>
+              <div class="product-price">
+                <p>
+                  <strong class="text-danger">$<span class="product-price-strong">29.99 </span></strong>
+                    
+                    </strong
+                  ><span class="text-decoration-line-through">$39.99</span>
+                </p>
+              </div>
+              <div
+                class="quantity-controller container-fluid border border-dark rounded row justify-content-between w-100"
+              >
+                <i
+                  class="fa-solid fa-minus border border-dark rounded col-1 h-25 mt-2 pe-4 btn"
+                ></i>
+                <p class="quantity col-3 mt-2 text-center">1</p>
+                <i
+                  id="arti"
+                  class="fa-solid fa-plus border border-dark rounded col-1 h-25 mt-2 pe-4 btn"
+                ></i>
+              </div>
+
+              <i class="fa-regular fa-trash-can fa-2x remove-btn btn text-secondary mt-2 row"></i>
+
+              <div class="product-total">
+                Product Total: $<span class="product-total-price">29.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="product row-cols-2 row mb-4">
+            <img
+              src="./img/bell.jpeg"
+              alt="reception bell"
+              class="w-50 col-2 rounded-5"
+            />
+            <div class="product-info col-2 w-50 h-25">
+              <h4 class="product-name text-dark">Reception Bell</h4>
+              <div class="product-price">
+                <p>
+                  <strong class="text-danger"
+                    >$<span class="product-price-strong">44.99 </span></strong
+                  ><span class="text-decoration-line-through">$64.99</span>
+                </p>
+              </div>
+              <div
+                class="quantity-controller container-fluid border border-dark rounded row justify-content-between w-100"
+              >
+                <i
+                  class="fa-solid fa-minus border border-dark rounded col-1 h-25 mt-2 pe-4 btn"
+                ></i>
+                <p class="quantity col-3 mt-2 text-center">1</p>
+                <i
+                  id="arti"
+                  class="fa-solid fa-plus border border-dark rounded col-1 h-25 mt-2 pe-4 btn"
+                ></i>
+              </div>
+
+              <i class="fa-regular fa-trash-can fa-2x remove-btn btn text-secondary mt-2 row"></i>
+
+              <div class="product-total">
+                Product Total: $<span class="product-total-price">44.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="cart-subtotal"
+          class="product-buy-detail container-fluid justify-content-between row"
+        >
+          <p class="col-3">Subtotal</p>
+          <p class="col-1">0</p>
+        </div>
+        <div
+          id="cart-tax"
+          class="product-buy-detail container-fluid justify-content-between row"
+        >
+          <p class="col-3">Tax(%18)</p>
+          <p class="col-1">0</p>
+        </div>
+        <div
+          id="cart-shipping"
+          class="product-buy-detail container-fluid justify-content-between row"
+        >
+          <p class="col-3">Shipping</p>
+          <p class="col-1">0</p>
+        </div>
+        <div
+          id="cart-total"
+          class="product-buy-detail container-fluid justify-content-between row"
+        >
+          <p class="col-3">Total</p>
+          <p class="col-1">0</p>
+        </div>
+      </div>
+    </main>
+    <script src="checkout.js"></script>
+  </body>
+</html>
