@@ -1,6 +1,6 @@
-// const taxRate = 0.18;
-// const shipping = 15;
-// const shippingFreePrice = 300;
+const taxRate = 0.18;
+const shipping = 15;
+const shippingFreePrice = 300;
 
 window.addEventListener("load", () => {
   // localStorage.setItem("taxRate", taxRate);
