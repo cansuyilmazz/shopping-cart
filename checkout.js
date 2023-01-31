@@ -3,9 +3,9 @@ const shipping = 15;
 const shippingFreePrice = 300;
 
 window.addEventListener("load", () => {
-  // localStorage.setItem("taxRate", taxRate);
-  // localStorage.setItem("shipping", shipping);
-  // localStorage.setItem("shippingFreePrice", shippingFreePrice);
+  localStorage.setItem("taxRate", taxRate);
+  localStorage.setItem("shipping", shipping);
+  localStorage.setItem("shippingFreePrice", shippingFreePrice);
   calculateCartTotal();
 });
 
